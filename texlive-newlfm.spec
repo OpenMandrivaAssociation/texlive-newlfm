@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/newlfm
+# catalog-date 2009-04-12 19:35:00 +0200
+# catalog-license gpl
+# catalog-version 9.4
 Name:		texlive-newlfm
 Version:	9.4
 Release:	1
@@ -99,6 +105,7 @@ is set automatically.
 #- source
 %doc %{_texmfdistdir}/source/latex/newlfm/newlfm.dtx
 %doc %{_texmfdistdir}/source/latex/newlfm/newlfm.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -109,3 +116,5 @@ is set automatically.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
