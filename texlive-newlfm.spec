@@ -6,7 +6,7 @@
 # catalog-version 9.4
 Name:		texlive-newlfm
 Version:	9.4
-Release:	3
+Release:	4
 Summary:	Write letters, facsimiles, and memos
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/newlfm
